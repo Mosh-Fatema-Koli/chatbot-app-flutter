@@ -1,6 +1,6 @@
 import 'package:boilerplate_of_cubit/library.dart';
 
-import '../data/model/UserInfo.dart';
+import '../data/models/UserInfo.dart';
 
 
 

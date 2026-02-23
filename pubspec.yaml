@@ -35,7 +35,6 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
   shared_preferences:
-  flutter_bloc:
   flutter_screenutil:
   dio:
   pretty_dio_logger:
@@ -49,11 +48,17 @@ dependencies:
   image_picker:
   cached_network_image:
   flutter_localization: ^0.3.2
-
+  flutter_riverpod:
+  freezed_annotation:
+  json_annotation:
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  build_runner:
+  freezed:
+  json_serializable:
+
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

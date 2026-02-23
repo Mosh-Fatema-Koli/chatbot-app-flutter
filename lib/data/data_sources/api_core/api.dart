@@ -295,7 +295,45 @@ return json.encode(fetchResponse);
     }
   }
 
+  /// 🔥 OpenAI Chat API
+  Future<Map<String, dynamic>> sendChatMessage({
+    required List<Map<String, String>> messages,
+    required String apiKey,
+  }) async {
+    try {
+      final response = await _dio.post(
+        "/chat/completions",
+        options: Options(
+          headers: {
+            "Authorization": "Bearer $apiKey",
+            "Content-Type": "application/json",
+          },
+        ),
+        data: {
+          "model": "gpt-4o-mini",
+          "messages": messages,
+        },
+      );
 
+      if (response.statusCode == 200) {
+        return {
+          "Success": true,
+          "Packet":
+          response.data["choices"][0]["message"]["content"],
+        };
+      } else {
+        return {
+          "Success": false,
+          "Message": "Unexpected error",
+        };
+      }
+    } on DioException catch (e) {
+      return {
+        "Success": false,
+        "Message": e.response?.data ?? e.message,
+      };
+    }
+  }
 
   //region Shared Error Handlers
   String handleErrorResponse(int statusCode, Map response, {String modelName = ''}) {

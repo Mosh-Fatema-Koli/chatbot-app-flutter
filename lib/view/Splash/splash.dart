@@ -19,7 +19,7 @@ class _SplashPageState extends State<SplashPage> {
       if (mounted) {
         Navigator.pushReplacement(
           context,
-          CupertinoPageRoute(builder: (_) => const ChatPage()),
+          CupertinoPageRoute(builder: (_) =>  ChatPage()),
         );
       }
     });

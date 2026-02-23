@@ -1,12 +1,11 @@
 
 export 'dart:io';
 export 'package:cached_network_image/cached_network_image.dart';
-export 'package:flutter_bloc/flutter_bloc.dart';
 export 'package:fluttertoast/fluttertoast.dart';
 export '../../../core/Constant.dart';
 export '../../../core/app_cash.dart';
 export '../../../core/colors.dart';
-export '../../data/model/OptionModel.dart';
+export '../../data/models/OptionModel.dart';
 export '../../../core/MiscController.dart';
 export '../../widgets/framework/C_button.dart';
 export '../../widgets/framework/rf_box_decoration.dart';
@@ -29,7 +28,7 @@ export 'package:path_provider/path_provider.dart';
 export 'package:sqflite/sqflite.dart';
 export 'package:path/path.dart';
 export 'package:image_picker/image_picker.dart';
-export '../data/model/UserInfo.dart';
+export '../data/models/UserInfo.dart';
 export 'package:flutter_spinkit/flutter_spinkit.dart';
 export '../../../widgets/framework/RF_AppBar.dart';
 export 'package:flutter_localizations/flutter_localizations.dart';
