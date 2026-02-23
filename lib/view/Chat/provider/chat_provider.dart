@@ -17,7 +17,7 @@ final chatRepositoryProvider =
 Provider<ChatRepository>((ref) {
   return ChatRepositoryImpl(
     api: ref.read(apiProvider),
-    apiKey: "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",
+    apiKey: "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",
   );
 });
 
